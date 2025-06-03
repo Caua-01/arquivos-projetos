@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Loja de Roupas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Minha Loja de Roupas</h1>
         <nav>
+            <h1>Minha Loja</h1>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Feminino</a></li>
-                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Roupas Femininas</a></li>
+                <li><a href="#">Roupas Masculinas</a></li>
+                <li><a href="#">Acessórios</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
@@ -22,35 +25,56 @@
 
     <main>
         <section class="hero">
-            <h2>Novidades Chegando!</h2>
-            <p>Confira as últimas tendências da moda.</p>
+            <h2>Bem-vindo à nossa loja!</h2>
+            <p>Descubra as últimas tendências da moda.</p>
             <button>Ver Produtos</button>
         </section>
 
         <section class="products">
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250x300?text=Camiseta+Básica" alt="Camiseta Básica">
-                <h3>Camiseta Básica</h3>
-                <p>R$ 49,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250x300?text=Calça+Jeans+Slim" alt="Calça Jeans Slim">
-                <h3>Calça Jeans Slim</h3>
-                <p>R$ 129,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250x300?text=Vestido+Floral" alt="Vestido Floral">
-                <h3>Vestido Floral</h3>
-                <p>R$ 89,90</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
+            <h3>Nossos Produtos em Destaque</h3>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                        <img src="imagens/1.jfif" alt="Camisa Polo Azul">
+                        <img src="imagens/2.jfif" alt="Camisa Polo Vermelha">
+                    </div>
+                    <h4>Camiseta Básica</h4>
+                    <p>R$ 49,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                     <img src="imagens/calça1.jfif" alt="Calça Jeans Skinny">
+                     <img src="imagens/calça2.jfif" alt="Calça Jeans Skinny">
+                    </div>                      
+                    <h4>Calça Jeans Skinny</h4>
+                    <p>R$ 129,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                        <img src="imagens/vestidoFlora1.jfif" alt="Vestido Floral">
+                        <img src="imagens/VestidoFloral2.jfif" alt="Vestido Floral Costas">
+                    </div>
+                    <h4>Vestido Floral</h4>
+                    <p>R$ 99,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-images-hover" onmouseenter="startImageRotation(this)" onmouseleave="stopImageRotation(this)">
+                    <img src="imagens/jaquetaCouro1.jfif" alt="Jaqueta de Couro">
+                    <img src="imagens/jaquetaCouro2.jfif" alt="Jaqueta Couro Costas">
+                    </div>
+                    <h4>Jaqueta de Couro</h4>
+                    <p>R$ 249,90</p>
+                    <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>           
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Tec_Blog.    Todos os direitos reservados.</p>
+        <p>&copy; 2025 Minha Loja de Roupas. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
