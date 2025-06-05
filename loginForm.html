@@ -33,6 +33,27 @@
         </form>
 
     </div>
+    <script>
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+
+            if (username === 'caua' && password === '6541'){
+
+                localStorage.setItem('loggedIn', 'true');
+                window.location.href = 'index.html';
+
+            } else {
+                errorMessage.textContent  = 'Usuário ou senha incorretos.'
+            }
+}) ;
+    </script>
     
 </body>
 </html>
