@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 900px; /* Largura máxima para o carrossel */
+    overflow: hidden; /* Oculta o conteúdo que excede o contêiner */
+    position: relative; /* Necessário para posicionar os slides */
+    border: 5px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide {
+    display: none; /* Esconde todos os slides por padrão */
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.carousel-slide img {
+    width: 100%; /* Garante que a imagem preencha o slide */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* Opcional: Adicione transições para uma mudança de imagem mais suave */
+.carousel-slide.active {
+    display: block; /* Exibe o slide ativo */
+    animation: fadeIn 1s forwards; /* Exemplo de animação de fade */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

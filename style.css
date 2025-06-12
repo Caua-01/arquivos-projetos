@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #333;
+    background-color: #1c3c46;
     color: #333;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #333;
+    background-image: url(imagens/backimagem2.jfif)  ;
+    background-color: #802121;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -49,12 +50,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Dourado */
+    color: #1a30ad; /* Dourado */
 }
 
 /* Seção Hero */
 .hero {
-    background-color: #555;
+ 
     color: white;
     text-align: center;
     padding: 4rem 20px;
@@ -97,7 +98,7 @@ nav ul li a:hover {
 .products h3 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #333;
+    color: #a32727;
 }
 
 .product-grid {
@@ -107,7 +108,7 @@ nav ul li a:hover {
 }
 
 .product-item {
-    background-color: white;
+    background-color: rgb(116, 189, 211);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -151,14 +152,14 @@ nav ul li a:hover {
 
 .product-item p {
     font-size: 1.1rem;
-    color: #777;
+    color: #250f0f;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 .product-item button {
-    background-color: #4CAF50; /* Verde */
-    color: white;
+    background-color: #0a0c92; /* Verde */
+    color: rgb(252, 252, 252);
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
