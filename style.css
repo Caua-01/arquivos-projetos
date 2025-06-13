@@ -4,16 +4,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1c3c46;
+    background-color: #000000;
     color: #333;
 }
 
 /* Cabeçalho */
 header {
-    background-image: url(imagens/backimagem2.jfif)  ;
+    background-size: cover;
+    background-position: center;
+    background-image: url(imagens/backimagem5)  ;
     background-color: #802121;
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -50,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1a30ad; /* Dourado */
+    color: #353a57; /* Dourado */
 }
 
 /* Seção Hero */
@@ -98,7 +100,7 @@ nav ul li a:hover {
 .products h3 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #a32727;
+    color: #adadadce;
 }
 
 .product-grid {
@@ -108,7 +110,7 @@ nav ul li a:hover {
 }
 
 .product-item {
-    background-color: rgb(116, 189, 211);
+    background-color: rgb(97, 145, 158);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
@@ -142,7 +144,9 @@ nav ul li a:hover {
 .product-images-hover img.active {
     opacity: 1;
 }
-
+.product-images-hover img:first-child {
+    opacity: 1;
+}
 
 .product-item h4 {
     font-size: 1.3rem;
@@ -158,7 +162,7 @@ nav ul li a:hover {
 }
 
 .product-item button {
-    background-color: #0a0c92; /* Verde */
+    background-color: #191bbd; /* Verde */
     color: rgb(252, 252, 252);
     border: none;
     padding: 0.8rem 1.5rem;
@@ -169,7 +173,7 @@ nav ul li a:hover {
 }
 
 .product-item button:hover {
-    background-color: #45a049;
+    background-color: #040f4e;
 }
 
 /* Rodapé */
