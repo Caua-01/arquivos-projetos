@@ -24,5 +24,5 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(currentSlide);
 
     // Configura o intervalo para mudar de slide automaticamente (a cada 3 segundos)
-    setInterval(nextSlide, 3000); // 3000 milissegundos = 3 segundos
+    setInterval(nextSlide, 1000); // 3000 milissegundos = 3 segundos
 });
